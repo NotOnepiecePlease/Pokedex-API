@@ -34,11 +34,30 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu.Core, Version=1.11.5.1, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9" />
+    <Reference Include="Bunifu.Licensing, Version=3.2.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b" />
     <Reference Include="Bunifu.UI.WinForms.BunifuButton">
       <HintPath>E:\@C Sharp\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuFormDock">
       <HintPath>E:\@C Sharp\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuFormDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox">
+      <HintPath>..\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuRating">
+      <HintPath>..\Bunifu UI WinForms 1.11.5.1\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuRating.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuScrollBar">
+      <HintPath>..\Bunifu UI WinForms 1.11.5.1\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuScrollBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuShadowPanel">
+      <HintPath>..\Bunifu UI WinForms 1.11.5.1\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuShadowPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuShapes">
+      <HintPath>..\Bunifu UI WinForms 1.11.5.1\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuShapes.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSlider">
+      <HintPath>..\Bunifu UI WinForms 1.11.5.1\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuSlider.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
       <HintPath>E:\@C Sharp\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
@@ -49,6 +68,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -60,67 +80,77 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Ability.cs" />
-    <Compile Include="Ability2.cs" />
-    <Compile Include="Animated.cs" />
-    <Compile Include="BlackWhite.cs" />
-    <Compile Include="Crystal.cs" />
-    <Compile Include="DiamondPearl.cs" />
-    <Compile Include="DreamWorld.cs" />
-    <Compile Include="Emerald.cs" />
-    <Compile Include="FireredLeafgreen.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Classes_Json\Ability.cs" />
+    <Compile Include="Classes_Json\Ability2.cs" />
+    <Compile Include="Classes_Json\Animated.cs" />
+    <Compile Include="Classes_Json\BlackWhite.cs" />
+    <Compile Include="Classes_Json\Crystal.cs" />
+    <Compile Include="Classes_Json\DiamondPearl.cs" />
+    <Compile Include="Classes_Json\DreamWorld.cs" />
+    <Compile Include="Classes_Json\Emerald.cs" />
+    <Compile Include="Classes_Json\FireredLeafgreen.cs" />
+    <Compile Include="Components\pokebola.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\pokebola.Designer.cs">
+      <DependentUpon>pokebola.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Pokedex.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Forms\frm_Pokedex.Designer.cs">
+      <DependentUpon>frm_Pokedex.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forma.cs" />
-    <Compile Include="GameIndice.cs" />
-    <Compile Include="GenerationI.cs" />
-    <Compile Include="GenerationIi.cs" />
-    <Compile Include="GenerationIii.cs" />
-    <Compile Include="GenerationIv.cs" />
-    <Compile Include="GenerationV.cs" />
-    <Compile Include="GenerationVi.cs" />
-    <Compile Include="GenerationVii.cs" />
-    <Compile Include="GenerationViii.cs" />
-    <Compile Include="Gold.cs" />
-    <Compile Include="HeartgoldSoulsilver.cs" />
-    <Compile Include="HeldItem.cs" />
-    <Compile Include="Home.cs" />
-    <Compile Include="Icons.cs" />
-    <Compile Include="Item.cs" />
-    <Compile Include="Move.cs" />
-    <Compile Include="Move2.cs" />
-    <Compile Include="MoveLearnMethod.cs" />
-    <Compile Include="OfficialArtwork.cs" />
-    <Compile Include="OmegarubyAlphasapphire.cs" />
-    <Compile Include="Other.cs" />
-    <Compile Include="Platinum.cs" />
+    <Compile Include="Classes_Json\Forma.cs" />
+    <Compile Include="Classes_Json\GameIndice.cs" />
+    <Compile Include="Classes_Json\GenerationI.cs" />
+    <Compile Include="Classes_Json\GenerationIi.cs" />
+    <Compile Include="Classes_Json\GenerationIii.cs" />
+    <Compile Include="Classes_Json\GenerationIv.cs" />
+    <Compile Include="Classes_Json\GenerationV.cs" />
+    <Compile Include="Classes_Json\GenerationVi.cs" />
+    <Compile Include="Classes_Json\GenerationVii.cs" />
+    <Compile Include="Classes_Json\GenerationViii.cs" />
+    <Compile Include="Classes_Json\Gold.cs" />
+    <Compile Include="Classes_Json\HeartgoldSoulsilver.cs" />
+    <Compile Include="Classes_Json\HeldItem.cs" />
+    <Compile Include="Classes_Json\Home.cs" />
+    <Compile Include="Classes_Json\Icons.cs" />
+    <Compile Include="Classes_Json\Item.cs" />
+    <Compile Include="Classes_Json\Move.cs" />
+    <Compile Include="Classes_Json\Move2.cs" />
+    <Compile Include="Classes_Json\MoveLearnMethod.cs" />
+    <Compile Include="Classes_Json\OfficialArtwork.cs" />
+    <Compile Include="Classes_Json\OmegarubyAlphasapphire.cs" />
+    <Compile Include="Classes_Json\Other.cs" />
+    <Compile Include="Classes_Json\Platinum.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RedBlue.cs" />
-    <Compile Include="Root.cs" />
-    <Compile Include="RubySapphire.cs" />
-    <Compile Include="Silver.cs" />
-    <Compile Include="Species.cs" />
-    <Compile Include="Sprites.cs" />
-    <Compile Include="Stat.cs" />
-    <Compile Include="Stat2.cs" />
-    <Compile Include="Type.cs" />
-    <Compile Include="Type2.cs" />
-    <Compile Include="UltraSunUltraMoon.cs" />
-    <Compile Include="Version.cs" />
-    <Compile Include="VersionDetail.cs" />
-    <Compile Include="VersionGroup.cs" />
-    <Compile Include="VersionGroupDetail.cs" />
-    <Compile Include="Versions.cs" />
-    <Compile Include="XY.cs" />
-    <Compile Include="Yellow.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Classes_Json\RedBlue.cs" />
+    <Compile Include="Classes_Json\Root.cs" />
+    <Compile Include="Classes_Json\RubySapphire.cs" />
+    <Compile Include="Classes_Json\Silver.cs" />
+    <Compile Include="Classes_Json\Species.cs" />
+    <Compile Include="Classes_Json\Sprites.cs" />
+    <Compile Include="Classes_Json\Stat.cs" />
+    <Compile Include="Classes_Json\Stat2.cs" />
+    <Compile Include="Classes_Json\Type.cs" />
+    <Compile Include="Classes_Json\Type2.cs" />
+    <Compile Include="Classes_Json\UltraSunUltraMoon.cs" />
+    <Compile Include="Classes_Json\Version.cs" />
+    <Compile Include="Classes_Json\VersionDetail.cs" />
+    <Compile Include="Classes_Json\VersionGroup.cs" />
+    <Compile Include="Classes_Json\VersionGroupDetail.cs" />
+    <Compile Include="Classes_Json\Versions.cs" />
+    <Compile Include="Classes_Json\XY.cs" />
+    <Compile Include="Classes_Json\Yellow.cs" />
+    <EmbeddedResource Include="Components\pokebola.resx">
+      <DependentUpon>pokebola.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Pokedex.resx">
+      <DependentUpon>frm_Pokedex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -129,6 +159,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -143,6 +174,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bordaPokebola.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bordaPokebola1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bordaPokebolaComFundo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgComSombra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrowright_52px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

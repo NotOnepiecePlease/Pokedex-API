@@ -17,3 +17,31 @@ C:\Users\AngeL\source\repos\PokedexAPI\bin\Debug\Bunifu.UI.WinForms.BunifuTextbo
 C:\Users\AngeL\source\repos\PokedexAPI\obj\Debug\PokedexAPI.csproj.AssemblyReference.cache
 C:\Users\AngeL\source\repos\PokedexAPI\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.dll
 C:\Users\AngeL\source\repos\PokedexAPI\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.xml
+E:\@C Sharp\PokedexAPI\bin\Debug\PokedexAPI.exe.config
+E:\@C Sharp\PokedexAPI\bin\Debug\PokedexAPI.exe
+E:\@C Sharp\PokedexAPI\bin\Debug\PokedexAPI.pdb
+E:\@C Sharp\PokedexAPI\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+E:\@C Sharp\PokedexAPI\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.dll
+E:\@C Sharp\PokedexAPI\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
+E:\@C Sharp\PokedexAPI\bin\Debug\Bunifu.UI.WinForms.BunifuRating.dll
+E:\@C Sharp\PokedexAPI\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.dll
+E:\@C Sharp\PokedexAPI\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.dll
+E:\@C Sharp\PokedexAPI\bin\Debug\Bunifu.UI.WinForms.BunifuShapes.dll
+E:\@C Sharp\PokedexAPI\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.dll
+E:\@C Sharp\PokedexAPI\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
+E:\@C Sharp\PokedexAPI\bin\Debug\Newtonsoft.Json.dll
+E:\@C Sharp\PokedexAPI\bin\Debug\Bunifu.UI.WinForms.BunifuButton.xml
+E:\@C Sharp\PokedexAPI\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.xml
+E:\@C Sharp\PokedexAPI\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.xml
+E:\@C Sharp\PokedexAPI\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.xml
+E:\@C Sharp\PokedexAPI\bin\Debug\Newtonsoft.Json.xml
+E:\@C Sharp\PokedexAPI\obj\Debug\PokedexAPI.exe.config
+E:\@C Sharp\PokedexAPI\obj\Debug\PokedexAPI.frm_Pokedex.resources
+E:\@C Sharp\PokedexAPI\obj\Debug\PokedexAPI.Properties.Resources.resources
+E:\@C Sharp\PokedexAPI\obj\Debug\PokedexAPI.csproj.GenerateResource.cache
+E:\@C Sharp\PokedexAPI\obj\Debug\PokedexAPI.exe.licenses
+E:\@C Sharp\PokedexAPI\obj\Debug\PokedexAPI.csproj.CoreCompileInputs.cache
+E:\@C Sharp\PokedexAPI\obj\Debug\PokedexAPI.csproj.CopyComplete
+E:\@C Sharp\PokedexAPI\obj\Debug\PokedexAPI.exe
+E:\@C Sharp\PokedexAPI\obj\Debug\PokedexAPI.pdb
+E:\@C Sharp\PokedexAPI\obj\Debug\PokedexAPI.Components.pokebola.resources
